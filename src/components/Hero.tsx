@@ -1,5 +1,8 @@
 import React from 'react';
 import { CheckCircle2, RotateCw, Sparkles } from 'lucide-react';
+import compostImage from '../assets/images/finished_compost_soil_1792241089924.jpg';
+import containerImage from '../assets/images/hero_clean_containers_1792225530408.jpg';
+import natureImage from '../assets/images/hero_nature_bg_1792225531468.jpg';
 
 interface HeroProps {
   onRequestDemo: () => void;
@@ -12,7 +15,7 @@ export const Hero: React.FC<HeroProps> = ({ onRequestDemo, onExploreHowItWorks }
       {/* Background Nature Image - visible in the background and adding natural atmosphere */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <img
-          src="/src/assets/images/hero_nature_bg_1792225531468.jpg"
+          src={natureImage}
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover object-right md:object-center opacity-50"
@@ -87,7 +90,7 @@ export const Hero: React.FC<HeroProps> = ({ onRequestDemo, onExploreHowItWorks }
             <div className="rounded-2xl bg-white/95 backdrop-blur-xs border border-[#EDE9DF] p-3 sm:p-3.5 shadow-sm">
               <div className="relative overflow-hidden rounded-xl bg-[#F8F8F2] aspect-[16/10]">
                 <img
-                  src="/src/assets/images/hero_clean_containers_1792225530408.jpg"
+                  src={containerImage}
                   alt="Modular wooden institutional composting containers with dark green lids beside a campus greenhouse and garden"
                   className="w-full h-full object-cover object-center"
                   loading="eager"
@@ -110,7 +113,7 @@ export const Hero: React.FC<HeroProps> = ({ onRequestDemo, onExploreHowItWorks }
             <div className="rounded-2xl bg-white/95 backdrop-blur-xs border border-[#EDE9DF] p-3 sm:p-3.5 shadow-sm">
               <div className="relative overflow-hidden rounded-xl bg-[#F8F8F2] aspect-[16/8]">
                 <img
-                  src="/src/assets/images/finished_compost_soil_1792241089924.jpg"
+                  src={compostImage}
                   alt="Rich dark finished organic compost in hands with gardening tray ready for campus soil"
                   className="w-full h-full object-cover object-center"
                   loading="eager"

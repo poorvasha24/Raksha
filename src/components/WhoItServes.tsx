@@ -1,5 +1,9 @@
 import React from 'react';
 import { GraduationCap, Building2, UtensilsCrossed, Building } from 'lucide-react';
+import cafeteriaImage from '../assets/images/sector_cafeteria_1792221471726.jpg';
+import campusImage from '../assets/images/sector_campus_1792221471708.jpg';
+import hotelImage from '../assets/images/sector_hotel_1792221472136.jpg';
+import officeParkImage from '../assets/images/sector_office_park_1792221471955.jpg';
 
 interface Sector {
   title: string;
@@ -18,7 +22,7 @@ export const WhoItServes: React.FC = () => {
       description:
         'Engage residential dining halls, student unions, and agricultural grounds with an educational, tangible composting installation.',
       keyUseCases: 'Dining hall plate waste, prep scraps, campus grounds mulch reuse',
-      image: '/src/assets/images/sector_campus_1792221471708.jpg',
+      image: campusImage,
       icon: GraduationCap,
     },
     {
@@ -27,7 +31,7 @@ export const WhoItServes: React.FC = () => {
       description:
         'Help property managers and corporate cafeteria operators meet tenant ESG expectations with clean, odor-managed on-site units.',
       keyUseCases: 'Employee dining cafeterias, coffee bars, corporate park flowerbeds',
-      image: '/src/assets/images/sector_office_park_1792221471955.jpg',
+      image: officeParkImage,
       icon: Building2,
     },
     {
@@ -36,7 +40,7 @@ export const WhoItServes: React.FC = () => {
       description:
         'Provide resort and hotel culinary departments a responsible outlet for banquet waste, connecting kitchen scraps directly to kitchen gardens.',
       keyUseCases: 'Banquet prep trimmings, buffet surplus, herb & culinary garden soil',
-      image: '/src/assets/images/sector_hotel_1792221472136.jpg',
+      image: hotelImage,
       icon: UtensilsCrossed,
     },
     {
@@ -45,7 +49,7 @@ export const WhoItServes: React.FC = () => {
       description:
         'Assist contract caterers, hospital dining facilities, and civic centers in handling high-throughput organic waste at the point of origin.',
       keyUseCases: 'Large volume vegetable peeling, high-speed scrap segregation, reduced skip loads',
-      image: '/src/assets/images/sector_cafeteria_1792221471726.jpg',
+      image: cafeteriaImage,
       icon: Building,
     },
   ];
