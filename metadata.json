@@ -1,0 +1,6 @@
+{
+  "name": "Raksha — Modular On-Site Composting",
+  "description": "Modular, on-site organic waste composting solution for colleges, universities, office parks, hotels, and commercial cafeterias.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
